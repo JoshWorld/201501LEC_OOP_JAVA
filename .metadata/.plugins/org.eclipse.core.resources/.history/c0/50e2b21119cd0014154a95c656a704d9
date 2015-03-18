@@ -1,0 +1,16 @@
+import java.lang.*;
+public class Pythagoras {
+
+	public static int addA2B(int a, int b) {
+		b += a;
+		return b;
+	}
+	
+
+    public static void main(String[] argSSSSSSSSSS) {
+    	int a = 1;
+    	int b = 1;
+    	addA2B(a, b);
+    	System.out.println(a + "   " + b);
+    	}
+}

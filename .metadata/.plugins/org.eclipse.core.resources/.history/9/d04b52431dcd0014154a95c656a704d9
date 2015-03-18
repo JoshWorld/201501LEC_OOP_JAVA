@@ -1,0 +1,10 @@
+import java.io.*;
+
+public class InputExample {
+	public static void main(String[] argv) {
+		InputStreamReader reader = new InputStreamReader(System.in);
+	}
+	
+	int a = reader.read();
+	Sytem.out.println(a);
+}

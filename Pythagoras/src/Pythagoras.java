@@ -5,7 +5,7 @@ public class Pythagoras {
         return Math.sqrt(a*a+b*b);
     }
 
-    public static void main(String[] argv) {
+    public static void main(String[] arg) {
         double x = 1.0;
         double y = 1.0;
         double len;
