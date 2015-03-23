@@ -1,4 +1,4 @@
 # javaLecture
-2015 Java Lecture
+2015 OOP Lecture for Dept. Game Eng., Tongmyong Univ.
 
-Hello, This is example Java Codes for 2015 Class "Object Oriented Programming" at Tongmyong University
+Click "Wiki" for the Lecture Pages
