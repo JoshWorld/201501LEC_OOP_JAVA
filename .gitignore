@@ -1,3 +1,8 @@
+# powerpoint raw data
+*.ppt
+*.pptx
+
+# byte code
 *.class
 
 # Mobile Tools for Java (J2ME)
