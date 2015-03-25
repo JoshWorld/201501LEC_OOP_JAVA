@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class SumUpToN {
 	public static void main(String[] argv) {
 		Scanner scanner = new Scanner(System.in);
-		int sum=0, i;
+		long sum=0, i;
 		
 		System.out.print("Input a number:");
-		int N = scanner.nextInt();
+		long N = scanner.nextLong();
+
 		for(i=1; i<=N; i++) {
 			sum += i;
 			System.out.print(i);
