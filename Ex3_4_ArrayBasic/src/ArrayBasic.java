@@ -21,8 +21,8 @@ public class ArrayBasic {
 		for(int quater=0;quater<iArray[0].length;quater++) {
 			quaterlyAvg[quater]/=iArray.length;
 		}
-		System.out.println("연평균 매출 = " + yearlyAvg);
-		System.out.println("분기별 매출 평균");
+		System.out.println("Yearly Average = " + yearlyAvg);
+		System.out.println("Quaterly Average");
 		System.out.println("1\t\t\t2\t\t\t3\t\t\t4");
 		for(int quater=0;quater<iArray[0].length;quater++) {
 			System.out.print((int)quaterlyAvg[quater]+"\t\t\t");
