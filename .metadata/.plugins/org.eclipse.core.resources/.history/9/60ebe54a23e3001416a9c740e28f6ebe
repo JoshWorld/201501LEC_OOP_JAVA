@@ -10,6 +10,7 @@ class Point {
 		else return false;
 	}
 }
+
 public class ClassCompare {
 	
 	public static void main(String[] argv) {
