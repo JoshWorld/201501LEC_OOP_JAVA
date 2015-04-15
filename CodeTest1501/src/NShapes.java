@@ -52,6 +52,7 @@ public class NShapes {
 	public static void main(String argv[]) {
 		final int nMaxNum = 100;
 		Shape[] shapes = new Shape[nMaxNum];
+		
 		int nShapes;
 		double fAreaSum = 0;
 		
