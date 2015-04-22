@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+abstract class Shape {
+	public abstract double area();
+}
+
+class Triangle extends Shape {
+	private double width;
+	private double height;
+	public Triangle(double w, double h) {
+		width = w;
+		height = h;
+	}
+	public double area() {
+		return 0.5*width*height;
+	}
+}
+
+class Rectangle extends Shape {
+	private double width;
+	private double height;
+	public Rectangle(double w, double h) {
+		width = w;
+		height = h;
+	}
+	public double area() {
+		return width*height;
+	}
+}
+
+class Circle extends Shape {
+	private double radius;
+	public Circle(double r) { radius = r; }
+	public double area() {
+		return radius*radius*3.141592;
+	}
+}
+
+public class NShapes {
+
+	
+	public static void main(String argv[]) {
+		Shape[] shapes;
+		int nShapes;
+		Scanner scanner = new Scanner(System.in);
+		
+
+		System.out.println("How many shapes? ");
+		int nShapes = scanner.nextInt();
+		
+		
+		System.out.println("Number of Shapes = "+ nShapes);
+	}
+	
+	private static double diff(Shape a, Shape b) {
+		return Math.abs(a.area()-b.area());
+	}
+	
+	
+	private static double sum(Shape a, Shape b) {
+		return Math.abs(a.area()+b.area());
+	}
+}
+

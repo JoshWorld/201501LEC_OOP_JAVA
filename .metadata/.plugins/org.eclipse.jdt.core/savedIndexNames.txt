@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.127+/Users/ymkang/myWork_iMac/Mac_2_Lectures/201501LEC_OOP_JAVA/.metadata/.plugins/org.eclipse.jdt.core
 1849085397.index
 1816660232.index
@@ -14,3 +15,23 @@ INDEX VERSION 1.127+/Users/ymkang/myWork_iMac/Mac_2_Lectures/201501LEC_OOP_JAVA/
 1924909042.index
 3869341371.index
 1968601551.index
+=======
+INDEX VERSION 1.127+C:\Users\Lectures\ymkang\201501LEC_OOP_JAVA\.metadata\.plugins\org.eclipse.jdt.core
+1114875268.index
+1808637612.index
+3180172003.index
+3655001944.index
+545573973.index
+1494767650.index
+1325065738.index
+4280048387.index
+772786393.index
+3576894358.index
+3515867980.index
+1802901826.index
+1176332901.index
+1167413765.index
+85247624.index
+354044308.index
+3150218879.index
+>>>>>>> origin/master
