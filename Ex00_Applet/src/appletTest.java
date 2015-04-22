@@ -5,9 +5,6 @@ import java.util.Calendar;
 public class appletTest extends JApplet {
 	
 	
-	
-
-	
 	String text = null;
 	int x;
 	int y;
@@ -16,21 +13,19 @@ public class appletTest extends JApplet {
 	
 	public void init() {
 		Calendar startDate = Calendar.getInstance();
-		startDate.set(1900,0,1);
+		startDate.set(1900,0,31);
 		Calendar now = Calendar.getInstance();
 		
-		
-		text = "Today's moon phase " + now.toString();
-		x = 30;
-		y = 30;
-		fontSize = 20;
-		
-
-
 		long days = daysBetween(startDate,now);
+
 		phase = days/29.530588853;
 		phase -= Math.floor(phase);
 		setContentPane(new MyPanel());
+		
+		text = "Today's moon phase(" + days + "," + phase + ")";
+		x = 30;
+		y = 30;
+		fontSize = 20;
 	}
 	
 	public static long daysBetween(Calendar s, Calendar e) {
