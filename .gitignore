@@ -1,3 +1,6 @@
+# metadata
+*.metadata
+
 # powerpoint raw data
 *.ppt
 *.pptx
