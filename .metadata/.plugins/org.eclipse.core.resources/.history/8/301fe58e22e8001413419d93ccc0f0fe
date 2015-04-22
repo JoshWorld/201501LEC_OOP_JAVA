@@ -1,0 +1,73 @@
+import java.awt.*;
+import javax.swing.*;
+import java.util.Calendar;
+
+public class appletTest extends JApplet {
+	
+	
+	
+
+	
+	String text = null;
+	int x;
+	int y;
+	int fontSize;
+	double phase;
+	
+	public void init() {
+		
+		text = "The moon of Today is ";
+		x = 30;
+		y = 30;
+		fontSize = 20;
+		
+		Calendar startDate = Calendar.getInstance();
+		Calendar now = Calendar.getInstance();
+		startDate.set(1900,0,31);
+		long days = daysBetween(startDate,now);
+		phase = days/29.530588853;
+		phase -= Math.floor(phase);
+		text = text + days + "days ... " + phase;
+		setContentPane(new MyPanel());
+	}
+	
+	public static long daysBetween(Calendar s, Calendar e) {
+		Calendar date = (Calendar) s.clone();
+		long daysBetween = 0;
+		while(date.before(e)) {
+			date.add(Calendar.DAY_OF_MONTH, 1);
+			daysBetween ++;
+		}
+		return daysBetween;
+	}
+	
+	public void start() {};
+	public void stop() {}
+	public void destroy() {}
+	
+	class MyPanel extends JPanel {
+		public void paintComponent(Graphics g) {
+			super.paintComponent(g);
+			g.setColor(Color.YELLOW);
+			g.fillRect(0, 0, getWidth(), getHeight());
+			g.setColor(Color.RED);;
+			g.setFont(new Font("Arial", Font.ITALIC, fontSize));
+			g.drawString(text, x, y);
+			
+			final int nV = 100;
+			int []x = new int[nV];
+			int []y = new int[nV];
+			
+			double radius = 100.0;
+			for(int i=0;i<nV;i++) {
+				double theta = 2.0*Math.PI / nV;
+				x[i] = 100 + (int) (radius * Math.cos(theta*i));
+				y[i] = 100 + (int) (radius * Math.sin(theta*i));
+				//System.out.println(x[i]+" "+y[i]);
+			}
+			g.fillPolygon(x,y, nV);
+			
+		}
+	}
+	
+}
