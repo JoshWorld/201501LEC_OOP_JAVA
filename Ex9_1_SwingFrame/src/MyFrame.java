@@ -8,13 +8,14 @@ public class MyFrame extends JFrame {
 		
 		Container cPane = getContentPane();
 		cPane.setBackground(Color.ORANGE);
-		setLayout(new FlowLayout());
+		setLayout(new FlowLayout(FlowLayout.RIGHT,0,0));
 		add(new JButton("button 1"));
 		add(new JButton("button 2"));
 		add(new JButton("button 3"));
 		
 		setSize(350,768);
 		setVisible(true);
+		
 	}
 	
 	public static void main(String[] argv) {
