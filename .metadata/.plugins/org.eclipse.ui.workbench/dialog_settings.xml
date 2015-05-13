@@ -5,7 +5,7 @@
 		<item value="825" key="DIALOG_X_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="526" key="dialogHeight"/>
+		<item value="556" key="dialogHeight"/>
 		<item value="960" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
