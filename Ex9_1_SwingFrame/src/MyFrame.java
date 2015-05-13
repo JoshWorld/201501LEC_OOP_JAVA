@@ -6,7 +6,14 @@ public class MyFrame extends JFrame {
 		setTitle("Hello Swing");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		setSize(350, 150);
+		Container cPane = getContentPane();
+		cPane.setBackground(Color.ORANGE);
+		setLayout(new FlowLayout());
+		add(new JButton("button 1"));
+		add(new JButton("button 2"));
+		add(new JButton("button 3"));
+		
+		setSize(350,768);
 		setVisible(true);
 	}
 	
