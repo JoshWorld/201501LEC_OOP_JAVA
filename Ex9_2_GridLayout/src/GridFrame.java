@@ -16,6 +16,7 @@ public class GridFrame extends JFrame {
 		add(new JLabel("Class"));
 		add(new JTextField("enter your class here"));
 		
+
 		setSize(512, 200);
 		setVisible(true);
 	}
